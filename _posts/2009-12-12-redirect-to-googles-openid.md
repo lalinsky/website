@@ -19,6 +19,6 @@ So I thought about switching to using my own URL as my OpenID, but I didn't want
 
 I ended up with just adding this to the static HTML file I have on [http://oxygene.sk/](http://oxygene.sk/):
 
-    <<span>meta</span><span> http-equiv</span>=<span>"X-XRDS-Location" </span><span>content</span>=<span>"https://www.google.com/accounts/o8/id" </span><span><span>/</span></span>>
+    <meta http-equiv="X-XRDS-Location" content="https://www.google.com/accounts/o8/id" />
 
 This means that every time I want to log in to an OpenID-enabled site, I can type in [http://oxygene.sk/](http://oxygene.sk/) and it will use the same Google's OpenID as before. Not exactly what I wanted initially, but it's better than having to remember the long URL.
