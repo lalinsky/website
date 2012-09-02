@@ -16,7 +16,7 @@ I guess it's time for AcoustID to have release notes when something gets release
 
 Some time ago I added overall search statistics. This release adds similar statistics for individual applications. For example:
 
-[![](http://oxygene.sk/lukas/blog/wp-content/uploads/acoustid_application_statistics-300x267.png)](http://oxygene.sk/lukas/blog/wp-content/uploads/acoustid_application_statistics.png)
+[![](/uploads/acoustid_application_statistics-300x267.png)](/uploads/acoustid_application_statistics.png)
 
 Of course, these statistics are only available to the owners of the applications.
 

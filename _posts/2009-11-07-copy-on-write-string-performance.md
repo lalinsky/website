@@ -19,7 +19,7 @@ tags:
 
 Since I've started using Qt, I loved the "implicit sharing" concept it uses for it's strings and container types. It become so much easier to pass these data around. I wasn't aware that some STL implementations have copy-on-write semantics for strings as well. When I saw some recommendations for `std::string` on Stack Overflow, I've decided to check out the implementation in GCC and discovered that it indeed does some reference counting.
 
-So the next step was comparing the implementations. I wrote a little [program](http://oxygene.sk/lukas/tmp/string-bench.cpp) today to check how `QString` and `std::wstring` compare in terms of copy-on-write performance. Since `QChar` is 2 bytes and `wchar_t` is 4 bytes on my machine, it wouldn't be completely fair comparison, so I've included also `std::string`. The results were quite surprising for me. STL does almost always better, but for some reason I wasn't able to make not dereference the string on read-only operations.
+So the next step was comparing the implementations. I wrote a little [program](/tmp/string-bench.cpp) today to check how `QString` and `std::wstring` compare in terms of copy-on-write performance. Since `QChar` is 2 bytes and `wchar_t` is 4 bytes on my machine, it wouldn't be completely fair comparison, so I've included also `std::string`. The results were quite surprising for me. STL does almost always better, but for some reason I wasn't able to make not dereference the string on read-only operations.
 
 
 

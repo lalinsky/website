@@ -27,4 +27,4 @@ And then see the author name in other tools like `bzr log` or `bzr annotate`:
 
 Naturally, commit, log and annotate from QBzr also supported this since the day I wrote the patch. It's a shame that `bzr log` only displays author names, not the bug information, because that makes the useful feature quite hidden if you are not using any GUI plugin. I think QBzr users tend to use these features more often, because the commit dialog make it very visible that there is a possibility to do so, but also because `bzr qlog` will then nicely present the metadata (labels in the revision graph, clickable links, search for bug numbers, etc.). Here you can see an example with revision that fixes two bugs and the committer is different from the change author:
 
-[![qlog-picard](http://oxygene.sk/lukas/blog/wp-content/uploads/qlog-picard.png)](http://oxygene.sk/lukas/blog/wp-content/uploads/qlog-picard.png)
+[![qlog-picard](/uploads/qlog-picard.png)](/uploads/qlog-picard.png)

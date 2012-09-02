@@ -10,7 +10,7 @@ tags:
 - personal
 ---
 
-I started writing this as a bit longer bio blurb for the [About](http://oxygene.sk/lukas/about/) page, but somehow it got too long before I was even halfway finished, so I decided to edit it a little bit and put it here instead. Not the usual stuff I post here, but not many people know how I got into programming and didn't have the heart to just delete it. :)
+I started writing this as a bit longer bio blurb for the [About](/about/) page, but somehow it got too long before I was even halfway finished, so I decided to edit it a little bit and put it here instead. Not the usual stuff I post here, but not many people know how I got into programming and didn't have the heart to just delete it. :)
 
 I was introduced to programming as a kid at the elementary school. Seeing that I can use mathematical functions and some funny English words, which I didn't understand, to draw circles on the TV pretty much changed my life. I wanted to learn more and more about the BASIC language, but it was more theoretical than practical, because I didn't have any computer at home back then. Even though I could only play with a computer at school, I loved reading programming books and learning more about it. A little later I got a computer and spent days and nights learning "real" programming in Pascal. While my classmates were having fun outside playing football, I was having fun learning about sorting algorithms and data structures. I didn't believe I could actually work at a programmer when I get older, but I very interested in learning more and more anyway.
 

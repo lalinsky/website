@@ -18,7 +18,7 @@ I've been using Mercurial at work for two months now and the expectations I had 
 ### Cheap Branches
 
 
-One of the main reason people use DVCS is cheap branching. The most surprising thing for me was that Mercurial doesn't offer many choices. It doesn't have the concept of branches, like Bazaar or Git. All you have is an immutable repository that can contain multiple head revisions. By default, you are expected to clone the whole repository. As [I mentioned earlier](http://oxygene.sk/lukas/2009/10/working-with-branches-in-bazaar/), I tend to work with many feature branches, so I prefer to have just one working tree.
+One of the main reason people use DVCS is cheap branching. The most surprising thing for me was that Mercurial doesn't offer many choices. It doesn't have the concept of branches, like Bazaar or Git. All you have is an immutable repository that can contain multiple head revisions. By default, you are expected to clone the whole repository. As [I mentioned earlier](/2009/10/working-with-branches-in-bazaar/), I tend to work with many feature branches, so I prefer to have just one working tree.
 
 One way to partially solve this problem is the [bookmarks extension](http://mercurial.selenic.com/wiki/BookmarksExtension). It basically allows you to have dynamic tags that move to new revisions as you commit. The initial configuration looks like this:
 

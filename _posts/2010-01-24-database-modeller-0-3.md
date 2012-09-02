@@ -12,7 +12,7 @@ tags:
 - release
 ---
 
-Database Modeller 0.3 has been released. There isn't as many changes as I wanted, but the main changes were unreleased for almost half a year. You can download the source code and Windows installer on the [project page](http://oxygene.sk/lukas/projects/dbmodel/).
+Database Modeller 0.3 has been released. There isn't as many changes as I wanted, but the main changes were unreleased for almost half a year. You can download the source code and Windows installer on the [project page](/projects/dbmodel/).
 
 Changes since version 0.2:
 

@@ -12,11 +12,11 @@ tags:
 - architecture
 ---
 
-Time flies really fast. It's been over a year ago since [I first released the server code for Acoustid](http://oxygene.sk/lukas/2010/08/acoustid/). Back then, Acoustid was just an experiment, but the project is becoming more and more visible and these days it's serving between [500k and 600k lookups every day](http://acoustid.org/stats).
+Time flies really fast. It's been over a year ago since [I first released the server code for Acoustid](/2010/08/acoustid/). Back then, Acoustid was just an experiment, but the project is becoming more and more visible and these days it's serving between [500k and 600k lookups every day](http://acoustid.org/stats).
 
 What makes me more happy than that the project is being useful is that the decisions I've made regarding the server architecture turned out to work very well and the server generally very fast and scalable. The average lookup processing time is around 60ms and I expect the number to go down, not up in the future.
 
-As the [post about Chromaprint](http://oxygene.sk/lukas/2011/01/how-does-chromaprint-work/) says, the audio fingerprints used in Acoustid are basically vectors of numbers. For performance reasons on the client side, applications are now calculating these fingerprints only from the first two minutes of audio files. That means that when the server scores the results, it only considers the first two minutes of audio. If two tracks have the same intro that is over two minutes long and then they get different, Acoustid will unfortunately see them as the same. This doesn't cause too many practical problems though. The MusicDNS service that MusicBrainz currently supports also use only the first two minutes.
+As the [post about Chromaprint](/2011/01/how-does-chromaprint-work/) says, the audio fingerprints used in Acoustid are basically vectors of numbers. For performance reasons on the client side, applications are now calculating these fingerprints only from the first two minutes of audio files. That means that when the server scores the results, it only considers the first two minutes of audio. If two tracks have the same intro that is over two minutes long and then they get different, Acoustid will unfortunately see them as the same. This doesn't cause too many practical problems though. The MusicDNS service that MusicBrainz currently supports also use only the first two minutes.
 
 Before scoring the results, the server must somehow get the results in the first place, and this is where normally things get slow. The database currently has more than 10M fingerprints. If we assume all fingerprints have at least two minutes (which means 948 numbers per fingerprint), that's 9480M numbers to search in. Just saving these numbers on disk, together with the pointers to the fingerprints they come from, would require 76GB of space. And since the search must be fast, the data must fit in RAM. This is obviously not the way to go if we want to be able to host the service on a single server and yet get response times below 100ms. The search space must be reduced.
 
@@ -28,6 +28,6 @@ The next step is to take these candidates and compare them against the original 
 
 The whole process looks something like this:
 
-[![](http://oxygene.sk/lukas/blog/wp-content/uploads/arch.png)](http://oxygene.sk/lukas/blog/wp-content/uploads/arch.png)
+[![](/uploads/arch.png)](/uploads/arch.png)
 
 This covers the searching side of the server. I'll try to write another post soon about the data management side (importing, merging, etc).

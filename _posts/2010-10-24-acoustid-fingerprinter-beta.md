@@ -14,7 +14,7 @@ tags:
 - qt
 ---
 
-[![](http://oxygene.sk/lukas/blog/wp-content/uploads/AcoustidFingerprinter1-264x300.png)](http://oxygene.sk/lukas/blog/wp-content/uploads/AcoustidFingerprinter1.png)
+[![](/uploads/AcoustidFingerprinter1-264x300.png)](/uploads/AcoustidFingerprinter1.png)
 
 Since my last Acoustid-related post, I was working on a GUI application for submitting fingerprints. It's far from finished, but I think it has reached the state where it can do something useful without breaking on trivial problems. Those who used the old [Last.fm fingerprinter](http://www.flickr.com/photos/ario/1277562689/) will know where I got the inspiration for the UI. :)
 
