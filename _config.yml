@@ -2,7 +2,7 @@ title: Lukáš Lalinský
 description: Random notes and stuff
 url: http://oxygene.sk
 
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 markdown: rdiscount
 exclude:
  - Makefile
