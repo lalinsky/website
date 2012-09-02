@@ -14,9 +14,16 @@ disqus_shortname: oxygene
 
 category_names:
  acoustid: Acoustid
- taglib: TagLib
- musicbrainz: MusicBrainz
  database-modeller: Database Modeller
- tools: Tools
+ musicbrainz: MusicBrainz
  programming: Programming
+ taglib: TagLib
+ tools: Tools
 
+category_order:
+ - acoustid
+ - database-modeller
+ - musicbrainz
+ - programming
+ - taglib
+ - tools
