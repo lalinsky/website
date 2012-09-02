@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<link type="application/rss+xml" rel="alternate" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+	{% if page.category %}<link type="application/rss+xml" rel="alternate" title="{{ site.title }} - {{ page.title }}" href="{{ site.url }}/category/{{ page.category }}/feed.xml" />{% endif %}
+	{% if page.tag %}<link type="application/rss+xml" rel="alternate" title="{{ site.title }} - {{ page.title }}" href="{{ site.url }}/tag/{{ page.tag }}/feed.xml" />{% endif %}
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-11936848-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="/">{{ site.title }}</a></h1>
+			<div id="cover"><img src="/images/header.jpg" alt=""></div>
+			<div id="navigation">
+				<a {% if page.url == "/" %}class="active"{% endif %} href="/">Home</a>
+				<a {% if page.url == "/projects/" %}class="active"{% endif %} href="/projects/">Projects</a>
+				<a {% if page.url == "/about/" %}class="active"{% endif %} href="/about/">About</a>
+			</div>
+		</div>
+		<div id="sidebar">
+		qwe
+		</div>
+		<div id="main">
+

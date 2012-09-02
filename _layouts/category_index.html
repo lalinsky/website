@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+
+{% assign posts = site.categories[page.category] %}
+{% include post_index.html %}

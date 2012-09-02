@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>{{ title }}</title>
+		<description>{{ site.description }}</description>
+		<link>{{ site.url }}</link>
+		<language>en</language>
+		{% for post in posts | limit:10 %}
+		<item>
+			<title>{{ post.title }}</title>
+			<link>{{ site.url }}{{ post.url }}</link>
+			<comments>{{ site.url }}{{ post.url }}#disqus_thread</comments>
+			{% for category in post.categories %}
+			<category>{{ category | xml_escape }}</category>
+			{% endfor %}
+			<description>{{ post.content | xml_escape }}</description>
+			<guid isPermaLink="false">{{ post.id }}</guid>
+			<pubDate>{{ post.date }}</pubDate>
+		</item>
+		{% endfor %}
+	</channel>
+</rss>
