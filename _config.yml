@@ -12,3 +12,11 @@ tag_dir: tag
 
 disqus_shortname: oxygene
 
+category_names:
+ acoustid: Acoustid
+ taglib: TagLib
+ musicbrainz: MusicBrainz
+ database-modeller: Database Modeller
+ tools: Tools
+ programming: Programming
+
