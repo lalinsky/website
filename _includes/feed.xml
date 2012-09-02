@@ -14,7 +14,11 @@
 			<category>{{ category | xml_escape }}</category>
 			{% endfor %}
 			<description>{{ post.content | xml_escape }}</description>
-			<guid isPermaLink="false">{{ post.id }}</guid>
+			{% if post.wordpress_id %}
+			<guid isPermaLink="false">http://oxygene.sk/lukas/?p={{ post.wordpress_id }}</guid>
+			{% else %}
+			<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+			{% endif %}
 			<pubDate>{{ post.date }}</pubDate>
 		</item>
 		{% endfor %}
