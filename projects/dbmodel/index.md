@@ -8,7 +8,7 @@ wordpress_id: 12
 ---
 
 <div style="float:right">
-<a href="http://oxygene.sk/lukas/blog/wp-content/uploads/dbmodel2.png"><img src="http://oxygene.sk/lukas/blog/wp-content/uploads/dbmodel2-300x225.png" /></a>
+<a href="/uploads/dbmodel2.png"><img src="/uploads/dbmodel2-300x225.png" /></a>
 </div>
 
 Several times I needed a tool to play with database models on Linux and I haven't found anything decent, so I've decided to write one myself. I've been using Visio's entity-relational diagram features a lot and I like it, so this is where I got ideas for the diagram look and editing UI design from. It's far from complete, but it already does most of the things I needed it to do.
