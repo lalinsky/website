@@ -12,7 +12,8 @@ module Jekyll
       self.data['category'] = category
 
       category_title_prefix = site.config['category_title_prefix'] || 'Category: '
-      self.data['title'] = "#{category_title_prefix}#{category}"
+      category_name = site.config['category_names'][category]
+      self.data['title'] = "#{category_title_prefix}#{category_name}"
     end
   end
 
