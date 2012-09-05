@@ -10,7 +10,7 @@ exclude:
 category_dir: category
 tag_dir: tag
 
-disqus_shortname: oxygene
+#disqus_shortname: oxygene
 
 category_names:
  acoustid: Acoustid
