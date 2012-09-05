@@ -9,7 +9,7 @@ tags:
 - release
 ---
 
-New version of Chromaprint has been released. The main change is compatibility with the latest FFmpeg API. There is also a modified fingerprint algorithm, that ignores leading silence up to a specific threshold, but this has no impact on Acoustid users.
+A new version of Chromaprint has been released. The main change is compatibility with the latest FFmpeg API. There is also a modified fingerprint algorithm, that ignores leading silence up to a specific threshold, but this has no impact on Acoustid users.
 
 Functionality of the `fpcalc` utility has not changed, so I'm not building the binaries for this release. You can use the binaries from version 0.6.
 
