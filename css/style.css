@@ -212,6 +212,7 @@ pre {
 	color: #fff;
 	overflow: auto;
 	padding: 2px 6px;
+	line-height: 16px;
 }
 
 code {
