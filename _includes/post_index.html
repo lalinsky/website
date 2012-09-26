@@ -3,7 +3,7 @@
 	{% capture curr_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 	{% if curr_year != prev_year %}
 		{% if prev_year != "" %}</ul>{% endif %}
-		<h3>{{ curr_year }}</h3>
+		{% unless skip_year_groups %}<h3>{{ curr_year }}</h3>{% endunless %}
 		<ul>
 		{% assign prev_year = curr_year %}
 	{% endif %}
