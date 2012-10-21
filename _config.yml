@@ -14,7 +14,7 @@ tag_dir: tag
 disqus_shortname: oxygene
 
 category_names:
- acoustid: Acoustid
+ acoustid: AcoustID
  database-modeller: Database Modeller
  musicbrainz: MusicBrainz
  programming: Programming
