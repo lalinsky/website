@@ -18,7 +18,7 @@ and then look up the submitted fingerprint to see if it's already imported.
 
 This weekend I've done some changes in how the importing process works and one of
 the results is that fingerprints are imported within seconds, not minutes, after they
-are imported. During normal operation, this means that submitted fingerprints will
+are submitted. During normal operation, this means that submitted fingerprints will
 get imported practically immediately.
 
 This change made it practical for the submission API call to wait a few seconds and
