@@ -17,7 +17,7 @@ search or you can use the official MusicBrainz search server.
 
 I've been playing with the idea of a customizable Solr-based solution for a
 long time. Creating a simple Solr index with the MusicBrainz data is not
-hard, but keeping it up to date it more complicated. 
+hard, but keeping it up to date is more complicated. 
 
 The [mbslave] package now includes a few scripts for creating and
 updating a Solr search index. See the `README` file for more information on
