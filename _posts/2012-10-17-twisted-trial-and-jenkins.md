@@ -25,7 +25,9 @@ Elsewhere you can use `pip` or `easy_install`.
 
 Then in your Jenkins configuration, you can use the following command and let Jenkins know to collect the test results from `results.xml`.
 
-    trial --reporter=subunit MYPACKAGE | subunit2junitxml >results.xml
+    trial --reporter=subunit MYPACKAGE | subunit-1to2  | subunit2junitxml >results.xml
+
+*UPDATE: compatibility with the latest subunit*
 
 [subunit]: http://pypi.python.org/pypi/python-subunit
 [junitxml]: http://pypi.python.org/pypi/junitxml
