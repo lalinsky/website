@@ -43,19 +43,14 @@ from sqlalchemy.ext.compiler import compiles
 class Keep(ColumnElement):
 
     def __init__(self, func, order_by, first=True):
+        super(Keep, self).__init__()
         self.func = func
         self.order_by = ClauseList(*to_list(order_by))
         self.first = first
 
     @property
     def type(self):
-        self.func.type
-
-    @property
-    def _from_objects(self):
-        return list(itertools.chain(
-            *[c._from_objects for c in (self.func, self.order_by)]
-        ))
+        return self.func.type
 
 
 def keep_first(func, order_by):
