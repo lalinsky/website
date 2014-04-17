@@ -5,6 +5,7 @@ slug: trips
 title: Trips
 ---
 
+ - 2014/04/18-2014/04/21: Hochkar / Tauplitz / Planai / Hauser Kaibling / Obertauern
  - 2014/02/14-2014/02/15: Sachticky / Krizna / Donovaly
  - 2014/01/10: Heukuppe, Austria ✓
  - 2014/01/03: Chopok/Dumbier, Slovensko ✓
