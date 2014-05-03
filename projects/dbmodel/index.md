@@ -33,9 +33,9 @@ Several times I needed a tool to play with database models on Linux and I haven'
 
 ### Development
 
-You can get the development version of the source code using Bazaar:
+You can get the development version of the source code using Git:
     
-    bzr branch http://bzr.oxygene.sk/dbmodel/trunk dbmodel
+    git clone https://bitbucket.org/lalinsky/dbmodel.git
 
 You need to have Qt4 installed, then you can run qmake followed by make to build it.
 
