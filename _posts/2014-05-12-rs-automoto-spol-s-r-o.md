@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RS AutoMoto spol. s r.o.
+title: Smutná realita na Slovensku
 categories:
 - misc
 ---
@@ -19,7 +19,4 @@ stavom tachometra 141329 a
 [tu](/uploads/alhambra-report.pdf) je report, kde je jasne vidno, že pred
 pár mesiacmi, keď sa predávalo v Holandsku, malo auto najazdených
 182796 kilometrov.
-
-Takže, ak kupujete auto od RS AutoMoto spol. s r.o. vo Vrútkach, pozor
-na to čo kupujete a radšej si možno nájdite nejaký serióznejší autobazár.
 
