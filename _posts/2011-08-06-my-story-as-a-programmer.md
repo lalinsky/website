@@ -5,8 +5,10 @@ layout: post
 slug: my-story-as-a-programmer
 title: My story (as a programmer)
 wordpress_id: 1554
+categories:
+- misc
 tags:
-- bio
+- about-me
 - personal
 ---
 
