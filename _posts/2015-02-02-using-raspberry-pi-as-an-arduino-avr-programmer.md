@@ -29,8 +29,8 @@ You need to use specific pins on the Arduino, but you can use
 any of the available pins on the Raspberry Pi. I used these:
 
  * Pin D11 (MOSI) on Arduino to pin 20 on RPi
- * Pin D12 (MISO) on Arduino to pin 21 on RPi
- * Pin D13 (SCK) on Arduino to pin 16 on RPi
+ * Pin D12 (MISO) on Arduino to pin 16 on RPi
+ * Pin D13 (SCK) on Arduino to pin 21 on RPi
  * Pin RESET on Arduino to pin 12 on RPi
  * GND on Arduino to GND on RPi
  * Vin on Arduino to 5V on RPi
