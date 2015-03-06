@@ -16,7 +16,7 @@ it came without the bootloader installed. And I didn't have a normal AVR ISP
 programmer to program the flash memory on the microcontroller.
 
 The ATmega328P chip can be programmed using the SPI protocol. The process
-requires 4 digital wires and the Raspberry Pi with its GPIO pins
+requires 4 digital wires and Raspberry Pi with its GPIO pins
 can be easily used to do that. On Linux, you can interact with GPIO pins
 using a sysfs interface and avrdude (the application that can program the chip)
 can talk the SPI protocol over this interface. So it's just a
@@ -33,7 +33,11 @@ any of the available pins on the Raspberry Pi. I used these:
  * Pin D13 (SCK) on Arduino to pin 21 on RPi
  * Pin RESET on Arduino to pin 12 on RPi
  * GND on Arduino to GND on RPi
- * Vin on Arduino to 5V on RPi
+ * 5V on Arduino to 3.3V on RPi
+
+Arduino should normally be powered by 5V, but Raspberry Pi
+needs 3.3V on GPIO pins, so we will run the Arduino at
+lower voltage. It should be fine for the programming.
 
 The result looked like this:
 
