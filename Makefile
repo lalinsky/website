@@ -1,6 +1,5 @@
 build:
-	jekyll
+	jekyll build
 
 run:
-	jekyll --server --auto
-
+	jekyll serve --watch

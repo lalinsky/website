@@ -1,4 +1,1 @@
----
-layout: rss
----
 {% capture title %}{{ site.title }} - {{ page.title }}{% endcapture %}{% assign posts = site.tags[page.tag] %}{% include feed.xml %}

@@ -4,7 +4,7 @@ url: http://oxygene.sk
 
 permalink: /:year/:month/:title/
 markdown: rdiscount
-pygments: true
+highlighter: pygments
 exclude:
  - Makefile
 
