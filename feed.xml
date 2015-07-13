@@ -1,1 +1,3 @@
+---
+---
 {% assign title = site.title %}{% assign posts = site.posts %}{% include feed.xml %}
