@@ -33,7 +33,7 @@ This because of the focus on full audio file tagging and integration with MusicB
 
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1EsL3v8k5F4DO8yhiiC-uWFTRF_xqTLU5lSbhY7HSI28/pubchart?oid=1788537123&amp;format=interactive"></iframe>
 
-*Unfortunatelly, the first version released 2010 was pretty minialistic and did not include request statistics, so we only have these numbers starting from August, 2011.*
+*Unfortunatelly, the first version released 2010 was pretty minimalistic and did not include request statistics, so we only have these numbers starting from August, 2011.*
 
 [MusicBrainz Picard](https://picard.musicbrainz.org/) is the biggest source of users, which is not surprising, because AcoustID has been created for MusicBrainz Picard.
 But there are other free applications that use AcoustID -- [beets](http://beets.radbox.org/), [MusicBee](http://getmusicbee.com/), [FileBot](http://www.filebot.net/),
