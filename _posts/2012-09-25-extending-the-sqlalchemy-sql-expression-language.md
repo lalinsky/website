@@ -21,24 +21,23 @@ with their latest album name. Oracle has special aggregate functions
 this, but unfortunately it isn't supported by the Oracle dialect in SQLAlchemy.
 The SQL query would look like this:
 
-{% highlight sql %}
+```
 SELECT
     artist,
     MIN(name) KEEP (DENSE_RANK LAST ORDER BY release_date)
 FROM album
 GROUP BY artist
-{% endhighlight %}
+```
 
 Recently, I've learned that it's possible to extend the [SQL compiler][sqla_comp] and
 add support for custom clauses that SQLAlchemy doesn't understand natively.
 In my specific case of the `KEEP` clause, I need this code to make it work:
 
-{% highlight python %}
+```
 import itertools
 from sqlalchemy.util import to_list
 from sqlalchemy.sql.expression import ColumnElement, ClauseList
 from sqlalchemy.ext.compiler import compiles
-
 
 class Keep(ColumnElement):
 
@@ -52,14 +51,11 @@ class Keep(ColumnElement):
     def type(self):
         return self.func.type
 
-
 def keep_first(func, order_by):
     return Keep(func, order_by)
 
-
 def keep_last(func, order_by):
     return Keep(func, order_by, first=False)
-
 
 @compiles(Keep)
 def compile_keep(keep, compiler, **kwargs):
@@ -68,17 +64,17 @@ def compile_keep(keep, compiler, **kwargs):
         "FIRST" if keep.first else "LAST",
         compiler.process(keep.order_by)
     )
-{% endhighlight %}
+```
 
 With this, I could simply use `keep_first()` and `keep_last()` as any
 other SQL expression functions. For example, the above SQL query would
 have been written like this:
 
-{% highlight python %}
+```
 session.query(Album.artist,
               keep_last(sql.func.min(Album.name), Album.release_date)).\
     group_by(Album.artist)
-{% endhighlight %}
+```
 
 The main advantage of having it all written as a SQL expression is that
 I don't need to know the actual column names, which get more and more
