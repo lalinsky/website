@@ -24,7 +24,7 @@ module Jekyll
       for i in 2..permalink.length
         posts = {}
         dates = {}
-        site.posts.each.each do |post|
+        site.posts.docs.each do |post|
           ignore = false
           date = []
           path = permalink[0,i].map do |part|
